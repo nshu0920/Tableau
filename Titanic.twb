@@ -1,0 +1,3218 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.1017.1259                               -->
+<workbook original-version='18.1' source-build='2019.3.1 (20193.19.1017.1259)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train_clean' inline='true' name='federated.0xmp82p1dflpb018nmit11wyzaje' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train_clean' name='textscan.0gnzxbl1ws067v13sfn40115blwh'>
+            <connection class='textscan' directory='/Users/shuna/Desktop/Titanic' filename='train_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0gnzxbl1ws067v13sfn40115blwh' name='train_clean.csv' table='[train_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='乘客Id' ordinal='0' />
+            <column datatype='string' name='获救情况' ordinal='1' />
+            <column datatype='string' name='舱位等级' ordinal='2' />
+            <column datatype='string' name='姓名' ordinal='3' />
+            <column datatype='string' name='性别' ordinal='4' />
+            <column datatype='real' name='年龄' ordinal='5' />
+            <column datatype='integer' name='兄弟姐妹的数量' ordinal='6' />
+            <column datatype='integer' name='父母与小孩的数量' ordinal='7' />
+            <column datatype='real' name='票价' ordinal='8' />
+            <column datatype='string' name='登船港口' ordinal='9' />
+            <column datatype='string' name='年龄段' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;￥&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>乘客Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[乘客Id]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>乘客Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>获救情况</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[获救情况]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>获救情况</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>舱位等级</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[舱位等级]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>舱位等级</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>姓名</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[姓名]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>姓名</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>性别</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[性别]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>性别</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>年龄</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[年龄]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>年龄</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>兄弟姐妹的数量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[兄弟姐妹的数量]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>兄弟姐妹的数量</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>父母与小孩的数量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[父母与小孩的数量]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>父母与小孩的数量</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>票价</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[票价]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>票价</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>登船港口</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[登船港口]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>登船港口</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>年龄段</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[年龄段]</local-name>
+            <parent-name>[train_clean.csv]</parent-name>
+            <remote-alias>年龄段</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='生还人数' datatype='integer' name='[Calculation_377809843958493184]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [获救情况] = &apos;生还&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='生还率' datatype='real' name='[Calculation_377809843959853058]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_377809843958493184]) / SUM([Number of Records])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[年龄]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[年龄段]' role='dimension' type='nominal' />
+      <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+      <column datatype='real' name='[票价]' role='measure' type='quantitative' />
+      <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+      <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+      <column-instance column='[票价]' derivation='Avg' name='[avg:票价:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[年龄]' derivation='None' name='[none:年龄:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[年龄段]' derivation='None' name='[none:年龄段:nk]' pivot='key' type='nominal' />
+      <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+      <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+      <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcrk:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_377809843958493184]' derivation='Sum' name='[sum:Calculation_377809843958493184:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[票价]' derivation='Sum' name='[sum:票价:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_377809843959853058]' derivation='User' name='[usr:Calculation_377809843959853058:qk]' pivot='key' type='quantitative' />
+      <group caption='操作(性别,获救情况)' hidden='true' name='[Action (性别,获救情况)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[性别]' />
+          <groupfilter function='level-members' level='[获救情况]' />
+        </groupfilter>
+      </group>
+      <group caption='操作(获救情况)' hidden='true' name='[Action (获救情况)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[获救情况]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[排除(性别,获救情况)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:性别:nk]' />
+          <groupfilter function='level-members' level='[none:获救情况:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[pcrk:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:票价:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:性别:nk]' type='palette'>
+            <map to='#a0cbe8'>
+              <bucket>&quot;男性&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;女性&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:舱位等级:nk]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>&quot;三等舱&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;一等舱&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;二等舱&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:获救情况:nk]' type='palette'>
+            <map to='#e15759'>
+              <bucket>&quot;未生还&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;生还&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:年龄段:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;中年(45-69岁)&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;青年(18-45岁)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;婴幼儿(0-6岁)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;中年(40-60岁)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;老年(60岁以上)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;青年(18-40岁)&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;老年(69岁以上)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;少儿(7-12岁)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;青少年(13-17岁)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:年龄:ok]' direction='ASC'>
+          <dictionary>
+            <bucket>0.41999999999999998</bucket>
+            <bucket>0.67000000000000004</bucket>
+            <bucket>0.75</bucket>
+            <bucket>0.82999999999999996</bucket>
+            <bucket>0.92000000000000004</bucket>
+            <bucket>1.0</bucket>
+            <bucket>2.0</bucket>
+            <bucket>3.0</bucket>
+            <bucket>4.0</bucket>
+            <bucket>5.0</bucket>
+            <bucket>6.0</bucket>
+            <bucket>7.0</bucket>
+            <bucket>7.1218234126984159</bucket>
+            <bucket>7.9520202380952387</bucket>
+            <bucket>8.0</bucket>
+            <bucket>9.0</bucket>
+            <bucket>10.0</bucket>
+            <bucket>10.994146067821081</bucket>
+            <bucket>11.0</bucket>
+            <bucket>12.0</bucket>
+            <bucket>13.0</bucket>
+            <bucket>14.0</bucket>
+            <bucket>14.5</bucket>
+            <bucket>15.0</bucket>
+            <bucket>15.886866666666661</bucket>
+            <bucket>16.0</bucket>
+            <bucket>16.79799523809524</bucket>
+            <bucket>17.0</bucket>
+            <bucket>18.0</bucket>
+            <bucket>18.396531547619059</bucket>
+            <bucket>19.0</bucket>
+            <bucket>19.885652266279465</bucket>
+            <bucket>20.0</bucket>
+            <bucket>20.056266612554118</bucket>
+            <bucket>20.368455952380966</bucket>
+            <bucket>20.5</bucket>
+            <bucket>20.725148737373743</bucket>
+            <bucket>21.0</bucket>
+            <bucket>22.0</bucket>
+            <bucket>22.359970505590802</bucket>
+            <bucket>22.833244884282379</bucket>
+            <bucket>23.0</bucket>
+            <bucket>23.315125595238097</bucket>
+            <bucket>23.37511377511381</bucket>
+            <bucket>23.436375595238097</bucket>
+            <bucket>23.452097336684702</bucket>
+            <bucket>23.5</bucket>
+            <bucket>23.791054594017098</bucket>
+            <bucket>24.0</bucket>
+            <bucket>24.32228095238095</bucket>
+            <bucket>24.360160095460117</bucket>
+            <bucket>24.5</bucket>
+            <bucket>24.848566666666667</bucket>
+            <bucket>25.0</bucket>
+            <bucket>25.34406666666667</bucket>
+            <bucket>25.543839741020921</bucket>
+            <bucket>25.665323809523802</bucket>
+            <bucket>25.855397619047618</bucket>
+            <bucket>26.0</bucket>
+            <bucket>26.02636593822842</bucket>
+            <bucket>26.113104166666666</bucket>
+            <bucket>26.323235750055776</bucket>
+            <bucket>26.758205158730171</bucket>
+            <bucket>26.760528102453073</bucket>
+            <bucket>27.0</bucket>
+            <bucket>27.260581876116191</bucket>
+            <bucket>27.396185912698421</bucket>
+            <bucket>27.499075468249874</bucket>
+            <bucket>27.889717503724718</bucket>
+            <bucket>27.904203599178622</bucket>
+            <bucket>28.0</bucket>
+            <bucket>28.5</bucket>
+            <bucket>28.540142857142868</bucket>
+            <bucket>29.0</bucket>
+            <bucket>29.140983862177556</bucket>
+            <bucket>29.559032539682565</bucket>
+            <bucket>29.578583916083925</bucket>
+            <bucket>29.862220898363336</bucket>
+            <bucket>30.0</bucket>
+            <bucket>30.5</bucket>
+            <bucket>30.631974478884732</bucket>
+            <bucket>31.0</bucket>
+            <bucket>31.112788095238098</bucket>
+            <bucket>31.170171598848817</bucket>
+            <bucket>31.423578095238092</bucket>
+            <bucket>31.972982142857141</bucket>
+            <bucket>32.0</bucket>
+            <bucket>32.009880952380954</bucket>
+            <bucket>32.100370747336292</bucket>
+            <bucket>32.22191706349205</bucket>
+            <bucket>32.5</bucket>
+            <bucket>33.0</bucket>
+            <bucket>33.194707936507939</bucket>
+            <bucket>33.799865706842176</bucket>
+            <bucket>34.0</bucket>
+            <bucket>34.323705555555556</bucket>
+            <bucket>34.5</bucket>
+            <bucket>34.737177408702415</bucket>
+            <bucket>34.791914285714306</bucket>
+            <bucket>35.0</bucket>
+            <bucket>35.101591603422307</bucket>
+            <bucket>35.289300655436641</bucket>
+            <bucket>35.778460000000003</bucket>
+            <bucket>36.0</bucket>
+            <bucket>36.5</bucket>
+            <bucket>37.0</bucket>
+            <bucket>37.00621746031743</bucket>
+            <bucket>37.448626190476183</bucket>
+            <bucket>38.0</bucket>
+            <bucket>38.358533333333305</bucket>
+            <bucket>38.459053751803744</bucket>
+            <bucket>38.861380158730135</bucket>
+            <bucket>38.917611904761905</bucket>
+            <bucket>39.0</bucket>
+            <bucket>39.179915079365074</bucket>
+            <bucket>40.0</bucket>
+            <bucket>40.5</bucket>
+            <bucket>41.0</bucket>
+            <bucket>41.032313740061099</bucket>
+            <bucket>41.737485425685392</bucket>
+            <bucket>42.0</bucket>
+            <bucket>42.357069971919984</bucket>
+            <bucket>43.0</bucket>
+            <bucket>44.0</bucket>
+            <bucket>44.055742460317447</bucket>
+            <bucket>44.10324484126987</bucket>
+            <bucket>44.177332936507945</bucket>
+            <bucket>44.715786904761906</bucket>
+            <bucket>45.0</bucket>
+            <bucket>45.5</bucket>
+            <bucket>45.75295194805193</bucket>
+            <bucket>46.0</bucket>
+            <bucket>47.0</bucket>
+            <bucket>48.0</bucket>
+            <bucket>49.0</bucket>
+            <bucket>49.713908333333301</bucket>
+            <bucket>49.98386215425127</bucket>
+            <bucket>50.0</bucket>
+            <bucket>50.099321825396778</bucket>
+            <bucket>50.922516847041834</bucket>
+            <bucket>51.0</bucket>
+            <bucket>52.0</bucket>
+            <bucket>53.0</bucket>
+            <bucket>54.0</bucket>
+            <bucket>55.0</bucket>
+            <bucket>55.5</bucket>
+            <bucket>56.0</bucket>
+            <bucket>57.0</bucket>
+            <bucket>57.982211904761904</bucket>
+            <bucket>58.0</bucket>
+            <bucket>59.0</bucket>
+            <bucket>59.981084523809542</bucket>
+            <bucket>60.0</bucket>
+            <bucket>61.0</bucket>
+            <bucket>62.0</bucket>
+            <bucket>63.0</bucket>
+            <bucket>64.0</bucket>
+            <bucket>65.0</bucket>
+            <bucket>66.0</bucket>
+            <bucket>70.0</bucket>
+            <bucket>70.5</bucket>
+            <bucket>71.0</bucket>
+            <bucket>74.0</bucket>
+            <bucket>80.0</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:年龄段:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;婴幼儿(0-6岁)&quot;</bucket>
+            <bucket>&quot;少儿(7-12岁)&quot;</bucket>
+            <bucket>&quot;青少年(13-17岁)&quot;</bucket>
+            <bucket>&quot;青年(18-45岁)&quot;</bucket>
+            <bucket>&quot;中年(45-69岁)&quot;</bucket>
+            <bucket>&quot;老年(69岁以上)&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:性别:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;女性&quot;</bucket>
+            <bucket>&quot;男性&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:舱位等级:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;一等舱&quot;</bucket>
+            <bucket>&quot;二等舱&quot;</bucket>
+            <bucket>&quot;三等舱&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:获救情况:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;未生还&quot;</bucket>
+            <bucket>&quot;生还&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='突出显示 1 (已生成)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='男女生还率分析' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='性别' />
+        <param name='target' value='男女生还率分析' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='各年龄段生存情况分析'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column caption='生还人数' datatype='integer' name='[Calculation_377809843958493184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [获救情况] = &apos;生还&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='生还率' datatype='real' name='[Calculation_377809843959853058]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_377809843958493184]) / SUM([Number of Records])' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[年龄段]' derivation='None' name='[none:年龄段:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_377809843958493184]' derivation='Sum' name='[sum:Calculation_377809843958493184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_377809843959853058]' derivation='User' name='[usr:Calculation_377809843959853058:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[年龄段]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;婴幼儿(0-6岁)&quot;</bucket>
+              <bucket>&quot;少儿(7-12岁)&quot;</bucket>
+              <bucket>&quot;青少年(13-17岁)&quot;</bucket>
+              <bucket>&quot;青年(18-40岁)&quot;</bucket>
+              <bucket>&quot;中年(40-60岁)&quot;</bucket>
+              <bucket>&quot;老年(60岁以上)&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' />
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk] + [federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk])</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</cols>
+      </table>
+      <simple-id uuid='{08F9BD84-2764-4C00-AA5E-8CB59D884B82}' />
+    </worksheet>
+    <worksheet name='各舱位等级男女生存率分析 '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column caption='生还人数' datatype='integer' name='[Calculation_377809843958493184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [获救情况] = &apos;生还&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='生还率' datatype='real' name='[Calculation_377809843959853058]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_377809843958493184]) / SUM([Number of Records])' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_377809843958493184]' derivation='Sum' name='[sum:Calculation_377809843958493184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_377809843959853058]' derivation='User' name='[usr:Calculation_377809843959853058:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;一等舱&quot;</bucket>
+              <bucket>&quot;二等舱&quot;</bucket>
+              <bucket>&quot;三等舱&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk] * ([federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk] + [federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]))</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</cols>
+      </table>
+      <simple-id uuid='{821B3A99-DAD5-4E19-AA5C-02B6D243A75D}' />
+    </worksheet>
+    <worksheet name='各舱位等级的票价情况'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column-instance column='[票价]' derivation='Avg' name='[avg:票价:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[票价]' role='measure' type='quantitative' />
+            <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]' scope='rows' value='平均票价' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</cols>
+      </table>
+      <simple-id uuid='{A35CAC1C-B90F-4700-8FC8-B0ACA44D4658}' />
+    </worksheet>
+    <worksheet name='家庭成员数量分析'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+            <column-instance column='[兄弟姐妹的数量]' derivation='Sum' name='[sum:兄弟姐妹的数量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[父母与小孩的数量]' derivation='Sum' name='[sum:父母与小孩的数量:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[兄弟姐妹的数量]' role='measure' type='quantitative' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[父母与小孩的数量]' role='measure' type='quantitative' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk]' scope='rows' value='父母与小孩数量的平均值' />
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:兄弟姐妹的数量:qk]' scope='rows' value='兄弟姐妹数量的平均值' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>父母与小孩数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:父母与小孩个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>堂兄弟/妹数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:堂兄弟/妹个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>父母与小孩数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:父母与小孩个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>堂兄弟/妹数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:堂兄弟/妹个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:兄弟姐妹的数量:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>父母与小孩数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:父母与小孩个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>堂兄弟/妹数量的平均值:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:堂兄弟/妹个数:qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk] + [federated.0xmp82p1dflpb018nmit11wyzaje].[sum:兄弟姐妹的数量:qk])</rows>
+        <cols>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk] / [federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk])</cols>
+      </table>
+      <simple-id uuid='{7E57D622-8B67-493B-B9F0-2C1D846C7BE1}' />
+    </worksheet>
+    <worksheet name='年龄段'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>&lt;</run>
+            <run fontsize='16'>Sheet Name</run>
+            <run fontsize='16'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[年龄段]' derivation='None' name='[none:年龄段:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[年龄段]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;婴幼儿(0-6岁)&quot;</bucket>
+              <bucket>&quot;少儿(7-12岁)&quot;</bucket>
+              <bucket>&quot;青少年(13-17岁)&quot;</bucket>
+              <bucket>&quot;青年(18-45岁)&quot;</bucket>
+              <bucket>&quot;中年(45-69岁)&quot;</bucket>
+              <bucket>&quot;老年(69岁以上)&quot;</bucket>
+              <bucket>%all%</bucket>
+              <bucket>&quot;青年(18-40岁)&quot;</bucket>
+              <bucket>&quot;中年(40-60岁)&quot;</bucket>
+              <bucket>&quot;老年(60岁以上)&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' scope='rows' value='人数' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' value='87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>年龄段:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>人数:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</cols>
+      </table>
+      <simple-id uuid='{90ED119D-8EC0-4F33-9040-1920CC8A3B53}' />
+    </worksheet>
+    <worksheet name='年龄段和舱位等级分析'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column caption='生还人数' datatype='integer' name='[Calculation_377809843958493184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [获救情况] = &apos;生还&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='生还率' datatype='real' name='[Calculation_377809843959853058]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_377809843958493184]) / SUM([Number of Records])' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[年龄段]' derivation='None' name='[none:年龄段:nk]' pivot='key' type='nominal' />
+            <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_377809843958493184]' derivation='Sum' name='[sum:Calculation_377809843958493184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_377809843959853058]' derivation='User' name='[usr:Calculation_377809843959853058:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[年龄段]' role='dimension' type='nominal' />
+            <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;婴幼儿(0-6岁)&quot;</bucket>
+              <bucket>&quot;少儿(7-12岁)&quot;</bucket>
+              <bucket>&quot;青少年(13-17岁)&quot;</bucket>
+              <bucket>&quot;青年(18-40岁)&quot;</bucket>
+              <bucket>&quot;中年(40-60岁)&quot;</bucket>
+              <bucket>&quot;老年(60岁以上)&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' value='104' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' />
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#edc948' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' />
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]' />
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#edc948' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' />
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#edc948' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk] * ([federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk] + [federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]))</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</cols>
+      </table>
+      <simple-id uuid='{DF32297B-BF28-4441-8D60-756A578973ED}' />
+    </worksheet>
+    <worksheet name='性别'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>&lt;</run>
+            <run fontsize='16'>Sheet Name</run>
+            <run fontsize='16'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' />
+              <wedge-size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' />
+              <size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>人数:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>占比:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0630483A-9454-4BC3-B94F-4E67EFE30685}' />
+    </worksheet>
+    <worksheet name='男女各舱位等级生存率分析'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column caption='生还人数' datatype='integer' name='[Calculation_377809843958493184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [获救情况] = &apos;生还&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='生还率' datatype='real' name='[Calculation_377809843959853058]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_377809843958493184]) / SUM([Number of Records])' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_377809843958493184]' derivation='Sum' name='[sum:Calculation_377809843958493184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_377809843959853058]' derivation='User' name='[usr:Calculation_377809843959853058:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;女性&quot;</bucket>
+              <bucket>&quot;男性&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;一等舱&quot;</bucket>
+              <bucket>&quot;二等舱&quot;</bucket>
+              <bucket>&quot;三等舱&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' />
+              <lod column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Calculation_377809843958493184:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xmp82p1dflpb018nmit11wyzaje].[usr:Calculation_377809843959853058:qk]</rows>
+        <cols>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk] / [federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk])</cols>
+      </table>
+      <simple-id uuid='{955934FD-1B34-444E-851A-867433E3ACD6}' />
+    </worksheet>
+    <worksheet name='男女生存情况的年龄分布'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+            <column-instance column='[年龄]' derivation='Sum' name='[sum:年龄:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[年龄]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]' scope='rows' value='年龄分布' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_red' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:年龄:qk]</rows>
+        <cols>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk] / [federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk])</cols>
+      </table>
+      <simple-id uuid='{D10C3886-F9E6-4D90-9C4A-39236A656BE3}' />
+    </worksheet>
+    <worksheet name='男女生还率分析'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>&lt;</run>
+            <run fontsize='16'>Sheet Name</run>
+            <run fontsize='16'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column-instance column='[获救情况]' derivation='Count' name='[cnt:获救情况:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+            <column-instance column='[获救情况]' derivation='Count' name='[pcto:cnt:获救情况:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]'>
+            <groupfilter function='level-members' level='[none:性别:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;未生还&quot;</bucket>
+              <bucket>&quot;生还&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</column>
+            <column>[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[cnt:获救情况:qk]' scope='rows' value='人数' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:cnt:获救情况:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>人数:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[cnt:获救情况:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xmp82p1dflpb018nmit11wyzaje].[cnt:获救情况:qk]</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</cols>
+      </table>
+      <simple-id uuid='{9864F5B9-AE0A-4073-A9AA-0EA12F719551}' />
+    </worksheet>
+    <worksheet name='票价分析'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column-instance column='[票价]' derivation='Avg' name='[avg:票价:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+            <column datatype='real' name='[票价]' role='measure' type='quantitative' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]' scope='rows' value='平均票价' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>性别:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>平均票价:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk] * [federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk])</rows>
+        <cols>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</cols>
+      </table>
+      <simple-id uuid='{452DF3C4-33DD-49BC-8004-5E5F5557677A}' />
+    </worksheet>
+    <worksheet name='舱位等级'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>&lt;</run>
+            <run fontsize='16'>Sheet Name</run>
+            <run fontsize='16'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[舱位等级]' derivation='None' name='[none:舱位等级:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[舱位等级]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;一等舱&quot;</bucket>
+              <bucket>&quot;二等舱&quot;</bucket>
+              <bucket>&quot;三等舱&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' />
+              <wedge-size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk:3]' />
+              <size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>舱位等级:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>人数:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>占比:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk:3]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B3B8E16A-A1DB-4CE1-9786-D50802CB1301}' />
+    </worksheet>
+    <worksheet name='获救情况'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>Sheet Name</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[获救情况]' derivation='None' name='[none:获救情况:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[获救情况]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;生还&quot;</bucket>
+              <bucket>&quot;未生还&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' />
+              <wedge-size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' />
+              <size column='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' />
+              <text column='[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>获救情况:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>人数:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>占比:&#9;</run>
+                <run bold='true'>&lt;[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{41E807D7-E867-4658-8A19-F21368F4E962}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='基本信息'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48876' id='15' type='layout-basic' w='98654' x='673' y='1124'>
+            <zone h='48876' id='11' param='horz' type='layout-flow' w='87132' x='673' y='1124'>
+              <zone h='48876' id='5' param='horz' type='layout-flow' w='87132' x='673' y='1124'>
+                <zone h='48876' id='3' type='layout-basic' w='87132' x='673' y='1124'>
+                  <zone h='48876' id='1' name='性别' w='23144' x='673' y='1124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48876' id='7' name='舱位等级' w='26108' x='29502' y='1124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48876' id='6' name='性别' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' w='5685' x='23817' y='1124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48876' id='8' name='舱位等级' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' type='color' w='7849' x='55610' y='1124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48876' id='9' name='获救情况' w='24346' x='63459' y='1124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone h='48876' id='16' param='horz' type='layout-flow' w='11522' x='87805' y='1124'>
+              <zone fixed-size='85' h='48876' id='10' is-fixed='true' param='vert' type='layout-flow' w='11522' x='87805' y='1124'>
+                <zone h='9411' id='12' name='获救情况' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' type='color' w='11522' x='87805' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='48876' id='13' name='年龄段' w='87132' x='673' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='48876' id='14' name='年龄段' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' type='color' w='11522' x='87805' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='30' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='48876' id='1' is-fixed='true' name='性别' w='23144' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='48876' id='6' name='性别' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' w='5685' x='23817' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48876' id='7' is-fixed='true' name='舱位等级' w='26108' x='29502' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='48876' id='8' name='舱位等级' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' type='color' w='7849' x='55610' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48876' id='9' is-fixed='true' name='获救情况' w='24346' x='63459' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9411' id='12' name='获救情况' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' type='color' w='11522' x='87805' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48876' id='13' is-fixed='true' name='年龄段' w='87132' x='673' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='48876' id='14' name='年龄段' pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' type='color' w='11522' x='87805' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{925E75E3-4F48-4158-AD38-71C93B4B94A8}' />
+    </dashboard>
+    <dashboard name='影响生还率的因素分析' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='210' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='9' param='vert' removable='false' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='6040' id='10' type='title' w='98654' x='673' y='1124'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91712' id='7' param='vert' removable='false' type='layout-flow' w='98654' x='673' y='7164'>
+              <zone h='91712' id='1' param='vert' removable='false' type='layout-flow' w='98654' x='673' y='7164'>
+                <zone fixed-size='170' h='23876' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98654' x='673' y='7164' />
+                <zone h='67836' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98654' x='673' y='31040'>
+                  <flipboard active-id='6' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='泰坦尼克号上的男性乘客明显多于女性。乘客主要是青年人，未成年人和中老人乘客人数大致相同。三等舱的乘客最多，超过了50%。事故发生后只有342人生还，生还率仅为38%，死亡率很高。' captured-sheet='基本信息' id='6'>
+                        <capturedDeltas>
+                          <worksheet name='获救情况'>
+                            <selection-collection />
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='虽然船上男性乘客人数多，但女性乘客的生还率却明显高于男性。' captured-sheet='按性别分析' id='5'>
+                        <capturedDeltas>
+                          <worksheet name='男女生还率分析'>
+                            <filter class='categorical' column='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]'>
+                              <groupfilter function='member' level='[none:性别:nk]' member='&quot;男性&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                            </filter>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='女性中未生还乘客的平均年龄比生还乘客的平均年龄小，但男性未生还乘客的平均年龄却比生还乘客的平均年龄大。' captured-sheet='按性别和年龄分析' id='11' />
+                      <story-point caption='婴儿的生还率最高，青年和中年乘客的生还率基本一致，少儿乘客和老年乘客的生还率较低。' captured-sheet='按年龄段分析' id='10' />
+                      <story-point caption='在二等舱的婴幼儿乘客存活率为100%，其余年龄段的乘客随着舱位等级的下降，生还率越低。' captured-sheet='按年龄段和舱位等级分析' id='8' />
+                      <story-point caption='性别对生还率的影响比舱位等级对生还率的影响大，舱位等级越低，生还率越低。' captured-sheet='按舱位等级和性别分析' id='9' />
+                      <story-point caption='一等舱的平均票价远远高于二等舱，三等舱的平均票价。无论男女，票价越高，乘客生还的几率越高。' captured-sheet='按舱位等级，性别和票价分析' id='12' />
+                      <story-point caption='女性中家庭成员数量越少，乘客生还的几率越大；男性中父母与小孩的个数越大，乘客越容易生还，兄弟姐妹的数量对男性乘客的生还率影响不大。' captured-sheet='按家庭成员数量分析' id='13'>
+                        <capturedDeltas>
+                          <worksheet name='家庭成员数量分析'>
+                            <style delta-type='added'>
+                              <style-rule element='axis'>
+                                <format attr='title' class='0' field='[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk]' scope='rows' value='父母与小孩数量的平均值' />
+                              </style-rule>
+                            </style>
+                            <selection-collection>
+                              <tuple-selection>
+                                <tuple-reference>
+                                  <tuple-descriptor>
+                                    <pane-descriptor>
+                                      <x-fields>
+                                        <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+                                        <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+                                      </x-fields>
+                                      <y-fields>
+                                        <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk]</field>
+                                      </y-fields>
+                                    </pane-descriptor>
+                                    <columns>
+                                      <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+                                      <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+                                      <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:兄弟姐妹的数量:qk]</field>
+                                      <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:父母与小孩的数量:qk]</field>
+                                    </columns>
+                                  </tuple-descriptor>
+                                  <tuple>
+                                    <value>&quot;女性&quot;</value>
+                                    <value>&quot;生还&quot;</value>
+                                    <value>120</value>
+                                    <value>120</value>
+                                  </tuple>
+                                </tuple-reference>
+                              </tuple-selection>
+                            </selection-collection>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{C982A476-FE1F-4747-B386-85DE640D7F19}' />
+    </dashboard>
+    <dashboard name='按家庭成员数量分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='3' name='家庭成员数量分析' w='98654' x='673' y='1124'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='93' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='94' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='97752' id='3' is-fixed='true' name='家庭成员数量分析' w='98654' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2BE44279-928B-4367-A61F-4EFD7131CF7D}' />
+    </dashboard>
+    <dashboard name='按年龄段分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='8' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='97752' id='6' type='layout-basic' w='85197' x='673' y='1124'>
+              <zone h='97752' id='5' name='各年龄段生存情况分析' w='85197' x='673' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97752' id='7' is-fixed='true' param='vert' type='layout-flow' w='13457' x='85870' y='1124'>
+              <zone h='9411' id='9' name='各年龄段生存情况分析' pane-specification-id='1' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' type='color' w='13457' x='85870' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='98' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='99' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='97752' id='5' is-fixed='true' name='各年龄段生存情况分析' w='85197' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9411' id='9' name='各年龄段生存情况分析' pane-specification-id='1' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' type='color' w='13457' x='85870' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D2E7D2A2-AC53-4CCC-9807-5FDC9EE4E17B}' />
+    </dashboard>
+    <dashboard name='按年龄段和舱位等级分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='7' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='97752' id='5' type='layout-basic' w='85197' x='673' y='1124'>
+              <zone h='97752' id='3' name='年龄段和舱位等级分析' w='85197' x='673' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97752' id='6' is-fixed='true' param='vert' type='layout-flow' w='13457' x='85870' y='1124'>
+              <zone h='9411' id='8' name='年龄段和舱位等级分析' pane-specification-id='8' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' type='color' w='13457' x='85870' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='105' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='106' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='97752' id='3' is-fixed='true' name='年龄段和舱位等级分析' w='85197' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9411' id='8' name='年龄段和舱位等级分析' pane-specification-id='8' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' type='color' w='13457' x='85870' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{73F1D494-FEED-49CA-97FD-99223502D937}' />
+    </dashboard>
+    <dashboard name='按性别分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='train_clean' name='federated.0xmp82p1dflpb018nmit11wyzaje' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0xmp82p1dflpb018nmit11wyzaje'>
+        <column-instance column='[性别]' derivation='None' name='[none:性别:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[性别]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='7' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='97752' id='5' type='layout-basic' w='85197' x='673' y='1124'>
+              <zone h='97752' id='3' name='男女生还率分析' w='85197' x='673' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97752' id='6' is-fixed='true' param='vert' type='layout-flow' w='13457' x='85870' y='1124'>
+              <zone h='13062' id='8' mode='radiolist' name='男女生还率分析' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='filter' w='13457' x='85870' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9411' id='9' name='男女生还率分析' pane-specification-id='1' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' w='13457' x='85870' y='14186'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='110' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='111' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone h='13062' id='8' mode='dropdown' name='男女生还率分析' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='filter' w='13457' x='85870' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97752' id='3' is-fixed='true' name='男女生还率分析' w='85197' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9411' id='9' name='男女生还率分析' pane-specification-id='1' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' w='13457' x='85870' y='14186'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8F8A402F-FA49-4B9A-A00A-B5D2B5ED2DC7}' />
+    </dashboard>
+    <dashboard name='按性别和年龄分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='7' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='97752' id='5' type='layout-basic' w='98654' x='673' y='1124'>
+              <zone h='97752' id='3' name='男女生存情况的年龄分布' w='98654' x='673' y='1124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='96' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='97' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='97752' id='3' is-fixed='true' name='男女生存情况的年龄分布' w='98654' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A9A17723-F3F1-4ABA-B831-105232665923}' />
+    </dashboard>
+    <dashboard name='按舱位等级和性别分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97752' id='28' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+            <zone h='97752' id='25' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+              <zone h='97752' id='18' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone h='97752' id='7' param='horz' type='layout-flow' w='98654' x='673' y='1124'>
+                  <zone h='97752' id='5' type='layout-basic' w='98654' x='673' y='1124'>
+                    <zone h='48377' id='20' name='各舱位等级男女生存率分析 ' w='98654' x='673' y='1124'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49375' id='26' name='男女各舱位等级生存率分析' w='98654' x='673' y='49501'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='117' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='118' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='48377' id='20' is-fixed='true' name='各舱位等级男女生存率分析 ' w='98654' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49375' id='26' is-fixed='true' name='男女各舱位等级生存率分析' w='98654' x='673' y='49501'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3E0AFEF2-D3EF-480A-B947-B04C06278BA7}' />
+    </dashboard>
+    <dashboard name='按舱位等级，性别和票价分析'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='41769' id='3' name='各舱位等级的票价情况' w='98654' x='673' y='1124'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='55983' id='5' name='票价分析' w='98654' x='673' y='42893'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='94' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97752' id='95' param='vert' type='layout-flow' w='98654' x='673' y='1124'>
+                <zone fixed-size='280' h='41769' id='3' is-fixed='true' name='各舱位等级的票价情况' w='98654' x='673' y='1124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55983' id='5' is-fixed='true' name='票价分析' w='98654' x='673' y='42893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E39F5C9C-A6EC-4B0A-8985-0A6F8C834403}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='影响生还率的因素分析' tab-color='#f66273'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1D38007B-0C72-4993-A77C-4458EC3E35C6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='各年龄段生存情况分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3A657BFA-4106-4B35-B1D3-FD8D6C5917CD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='各舱位等级男女生存率分析 '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:Calculation_377809844016984067:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:Calculation_377809844017037316:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F4C1EEB7-448C-42FB-9A7C-19DA1D106061}' />
+    </window>
+    <window class='worksheet' hidden='true' name='各舱位等级的票价情况'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45461A6D-DBFC-4E3C-9578-8E5F2B00058E}' />
+    </window>
+    <window class='dashboard' hidden='true' name='基本信息'>
+      <viewpoints>
+        <viewpoint name='年龄段'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='性别'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='舱位等级'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='获救情况'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{65D35DF0-3EC0-4E60-92A6-BE5DBBC0DBFC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='家庭成员数量分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:堂兄弟/妹个数:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0F251CC7-F255-4D0E-BB2B-C0190AFCF58B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='年龄段'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D0E57BFD-B4F6-4F43-B658-B9B1F2F0612F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='年龄段和舱位等级分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:Calculation_377809843959603201:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{39BB9B99-E68E-471B-A63C-B93D7E394AEA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='性别'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{EDA2A447-D564-49D0-B511-ECD3B4775B4B}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按家庭成员数量分析'>
+      <viewpoints>
+        <viewpoint name='家庭成员数量分析'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FDB483F0-7499-4861-BBF3-C8AB675EC59C}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按年龄段分析'>
+      <viewpoints>
+        <viewpoint name='各年龄段生存情况分析'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0xmp82p1dflpb018nmit11wyzaje].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AFDD86E3-5E7D-4BDA-A579-0CFEA073B35D}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按年龄段和舱位等级分析'>
+      <viewpoints>
+        <viewpoint name='年龄段和舱位等级分析'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{D9071E76-2516-411A-B0EB-C145336ED620}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按性别分析'>
+      <viewpoints>
+        <viewpoint name='男女生还率分析'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            </color-one-way>
+          </highlight>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DCDBA39D-B4DE-4268-B600-E2BC74A22819}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按性别和年龄分析'>
+      <viewpoints>
+        <viewpoint name='男女生存情况的年龄分布'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DF0004AC-8C70-4B5E-BD9A-CCE05FA95770}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按舱位等级和性别分析'>
+      <viewpoints>
+        <viewpoint name='各舱位等级男女生存率分析 '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='男女各舱位等级生存率分析'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{85D84760-638F-487E-9A1A-E88CED4D4C4C}' />
+    </window>
+    <window class='dashboard' hidden='true' name='按舱位等级，性别和票价分析'>
+      <viewpoints>
+        <viewpoint name='各舱位等级的票价情况'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='票价分析'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4C98C7A3-AF96-475F-AAFC-5CA40506F2D0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='男女各舱位等级生存率分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:Calculation_377809844016984067:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:Calculation_377809844017037316:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85BDA3CA-7482-4866-949E-B08506432A6C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='男女生存情况的年龄分布'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E6B5DA7A-C64F-4125-8E4A-B904418AE604}' />
+    </window>
+    <window class='worksheet' hidden='true' name='男女生还率分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{76D0B087-A189-4D1C-9573-27CF85AE2B1E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='票价分析'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[avg:票价:qk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:姓名:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:年龄段:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:性别:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E4CC9F22-7B1C-443A-9874-8510C6F6CC46}' />
+    </window>
+    <window class='worksheet' hidden='true' name='舱位等级'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:舱位等级:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F71C973F-13A0-4FCD-B9AF-AF6B901A0EF3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='获救情况'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+                  <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[sum:Number of Records:qk]</field>
+                  <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[pcto:sum:Number of Records:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;生还&quot;</value>
+                <value>342</value>
+                <value>0.38383838383838381</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xmp82p1dflpb018nmit11wyzaje].[none:获救情况:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{84912357-62C1-4A21-ACA3-94151DF43933}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='影响生还率的因素分析' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
